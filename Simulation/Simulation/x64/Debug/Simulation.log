@@ -1,0 +1,12 @@
+﻿  huffman.cpp
+  layouts.cpp
+  Simulation.cpp
+  submenu.cpp
+  utils.cpp
+D:\Desktop\2645\Unit2\Simulation\Simulation\utils.cpp(1284,31): warning C4101: “e”: 未引用的局部变量
+D:\Desktop\2645\Unit2\Simulation\Simulation\utils.cpp(1485,31): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Desktop\2645\Unit2\Simulation\Simulation\utils.cpp(1568,39): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+D:\Desktop\2645\Unit2\Simulation\Simulation\utils.cpp(1246): warning C4715: “_Helper::convertColorNameToHex”: 不是所有的控件路径都返回值
+D:\Desktop\2645\Unit2\Simulation\Simulation\submenu.cpp(707): warning C4715: “_TemplateFunction::IVConverter”: 不是所有的控件路径都返回值
+  Simulation.vcxproj -> D:\Desktop\2645\Unit2\Simulation\x64\Debug\Simulation.exe
