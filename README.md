@@ -2,7 +2,7 @@
 Circuit simulator for validation of huffman coding, sending and receiving waves. 
 
 # Coursework Requirements
-By the end of this unit, student should be able to:
+Southwest Jiaotong University & University of Leeds, ELEC/XJEL 2645 couse midterm group project. By the end of this unit, student should be able to:
 - Design and develop a large software project Write, compile, run and de-bug complex C++ programs using appropriate software engineering techniques.
 - Demonstrate initiative, independent learning, creativity, problem-solving, time management and project management skills.
 - Present their work in an effective manner.
