@@ -29,6 +29,7 @@ The project runs on the Windows command line, but we expect to end up with color
 5.  Partial circuit simulation implemented.
 
 # Individual Final Version Presentation
+
 **1. Main Menu (implemented by Yusen Liu)**
 
 ![](https://minerva.leeds.ac.uk/bbcswebdav/internal/courses/202021_34256_XJEL2645/wikis/group/7a59be190ca14294b520c281abd55b71/c41981f332f94ddabf3c0ee34f4e0e88/QQ%E6%88%AA%E5%9B%BE20201208232036.png)
@@ -36,17 +37,20 @@ This is the main menu of this program, use can enter 1-4 to choose the function 
 But for a starter, he may first encode some texts. Let's move into the "1. Encode" function.
 
 **2. Encode (algorithm implemented by me)**
+
 ![](https://minerva.leeds.ac.uk/bbcswebdav/internal/courses/202021_34256_XJEL2645/wikis/group/7a59be190ca14294b520c281abd55b71/c41981f332f94ddabf3c0ee34f4e0e88/QQ%E6%88%AA%E5%9B%BE20201208233248.png)
 This is the encode interface, the algorithm is completed by me while the interface is created by Yusen Liu. There's a short sentence  and an example  explain what this function does. The user can press the number 0 to turn back to main menu.
 Here, I want to encode this sentence: "I am handsome!".
 As I pressed 'enter', we go to the next page.
 
 **3. Encode Result (algorithm and figures implemented by me)**
+
 ![](https://minerva.leeds.ac.uk/bbcswebdav/internal/courses/202021_34256_XJEL2645/wikis/group/7a59be190ca14294b520c281abd55b71/c41981f332f94ddabf3c0ee34f4e0e88/QQ%E6%88%AA%E5%9B%BE20201208233644.png)
 The left part shows the the compression ratio, the binary code and the Huffman tree leaves. Each leave represents one character's binary code. The right part shows the square wave of this binary code, and this square wave is transformed into a sine wave as shown below, which is the signal transferred in air.
 Now, let's press 0 to go back to main menu, and press 2 to go to the "2. Circuit" function.
 
 **4. Circuit  **(each component template, the way to connect component, setting the colour and position, the sub-menu and IVConverter circuit are implemented by me)****
+
 **![](https://minerva.leeds.ac.uk/bbcswebdav/internal/courses/202021_34256_XJEL2645/wikis/group/7a59be190ca14294b520c281abd55b71/c41981f332f94ddabf3c0ee34f4e0e88/QQ%E6%88%AA%E5%9B%BE20201208234236.png)**
 This is the whole filter and decoding circuit. This circuit contains three parts:
 1. IVConverter (before the IVC Out as shown in circuit), to overlay the noise and original signal, and a amplifier to increase the input current to a large voltage.
@@ -71,6 +75,7 @@ Besides, if you input a wrong number here, there's also a hint:
 By pressing "0 - Back", we returned to the main menu. Now let's press "3 - Decode".
 
 **5. Decode **(the algorithm is implemented by Keyi Zhou and me, the figure is implemented by me)****
+
 ****![](https://minerva.leeds.ac.uk/bbcswebdav/internal/courses/202021_34256_XJEL2645/wikis/group/7a59be190ca14294b520c281abd55b71/c41981f332f94ddabf3c0ee34f4e0e88/QQ%E6%88%AA%E5%9B%BE20201209101903.png)****
 After we changed the noise intensity, we have known the decoding output is correct. In this decode page, we can clearly compare the original values and decoded values.
 If the circuit failed to decoding, you may notice different square waves (the above indicates the original bits without noise added while the bottom means the bits with noise added after the filter circuit). They are absolutely the same in this situation, the noise have no influence on the signal.
@@ -82,6 +87,7 @@ At the application level, I learned how to use the Windows API to control the di
 In terms of course knowledge, I used a combination of menus, classes, string manipulation, loops, and pointers to write code that was in line with Google Code Style and C++ programming specifications. After this five-week project, I became more proficient and comfortable with these basic programming modules.
 
 **For the application of the Software Engineer Guidelines:**
+
 1. Have a solid foundation.
 This is reflected in the fact that my code writing conforms to the Google Code Style required for the assignment, as well as the object-oriented programming guidelines of C++. Without a solid professional foundation (since I have a minor in software engineering), it would be difficult for me to use data structures such as vector, map, queue, etc. correctly, use pointers properly and avoid memory leaks.
 2. Have a rich imagination.
@@ -92,6 +98,7 @@ As you can see from the individual wikis, since the first week of the team meeti
 I often help my teammates in the development process, but I do not interfere too much with their work, but inspired them by guiding them step by step through their tasks. I listened carefully to my teammates' opinions, did not complain, and actively worked with them to improve the project.
 
 **For teamwork**
+
 Teamwork is challenging because we don't know the basics of what others know, and they may have a different perspective on key project decisions than we do. However, the value of the team's creativity far outweighs the risk of the challenge. I think we worked very well together as a team, but from my personal perspective, I would like to share my thoughts on this team project.
 1. The team should have a team leader who is responsible for the overall development progress of the project (I held this position in this project). But more importantly, the team leader needs to know what the team members are good at and what they really like to do. There is an old Chinese saying: teach according to your ability - you can't ask a student who is good at algorithms but messed up in interface design to do some work with the interface - you can't ask a student who still lacks in knowledge base to try very deep and complex code. Moreover, the team leader needs to supervise the team members to complete the tasks on time.
 2. The team needs to be full of encouragement. Sometimes you may think it's not surprising when someone finally does what they want after failing a thousand times, but for them, it's a big surprise, this is a great progress. If you can praise him at this moment, he will appreciate it, and this is the key to maintaining a good team atmosphere.
