@@ -32,26 +32,26 @@ The project runs on the Windows command line, but we expect to end up with color
 
 **1. Main Menu (implemented by Yusen Liu)**
 
-![](https://imgtu.com/i/jOcMef)
+![](https://s1.ax1x.com/2022/07/22/jOcMef.png)
 This is the main menu of this program, use can enter 1-4 to choose the function they like.
 But for a starter, he may first encode some texts. Let's move into the "1. Encode" function.
 
 **2. Encode (algorithm implemented by me)**
 
-![](https://imgtu.com/i/jOcQw8)
+![](https://s1.ax1x.com/2022/07/22/jOcQw8.png)
 This is the encode interface, the algorithm is completed by me while the interface is created by Yusen Liu. There's a short sentence  and an example  explain what this function does. The user can press the number 0 to turn back to main menu.
 Here, I want to encode this sentence: "I am handsome!".
 As I pressed 'enter', we go to the next page.
 
 **3. Encode Result (algorithm and figures implemented by me)**
 
-![](https://imgtu.com/i/jOclTS)
+![](https://s1.ax1x.com/2022/07/22/jOclTS.png)
 The left part shows the the compression ratio, the binary code and the Huffman tree leaves. Each leave represents one character's binary code. The right part shows the square wave of this binary code, and this square wave is transformed into a sine wave as shown below, which is the signal transferred in air.
 Now, let's press 0 to go back to main menu, and press 2 to go to the "2. Circuit" function.
 
 **4. Circuit  **(each component template, the way to connect component, setting the colour and position, the sub-menu and IVConverter circuit are implemented by me)****
 
-![](https://imgtu.com/i/jOc8YQ)
+![](https://s1.ax1x.com/2022/07/22/jOc8YQ.png)
 This is the whole filter and decoding circuit. This circuit contains three parts:
 1. IVConverter (before the IVC Out as shown in circuit), to overlay the noise and original signal, and a amplifier to increase the input current to a large voltage.
 2. Comparator (before the Comp Out) to transfer the sine wave into a square wave.
@@ -60,12 +60,12 @@ Note that, for a input of "I am handsome!", the decoding result is  not correct,
 Actually we can press "3 - Analyse" to see what happened by seeing the output at each position of this circuit to analyse the specific problem, but this part is not completed by me.
 Assume that the key problem is high noise intensity, so now let's change it.
 By pressing "1 - Change value", here we choose "1 - Noise Source" and changed the value to "0.01". There is a hint said "Property changed succeeded!". After 3 seconds, the circuit is reloaded.
-![](https://imgtu.com/i/jOcNyq)
+![](https://s1.ax1x.com/2022/07/22/jOcNyq.png)
 Now we can see that the second screen  correctly  displayed our decoding value: "I am handsome!".
 This indicates the noise is completely removed by this circuit, and each binary bit is correct at this time.
 By now, that's try to change the colour.
 I think the original "BLUE" colour of the resistor Rf=5.5MΩ is not beautiful. Let's change it to a "GREEN" colour.
-![](![](https://imgtu.com/i/jOcYSs))
+![](https://s1.ax1x.com/2022/07/22/jOcYSs.png)
 Even I closed the console now and restart again, the resistor still remains its "GREEN" colour, since all of the properties are stored in files.
 You may have noticed that, we can only change a few properties here, that's because only I did the implementation of changing values, since only my IVConverter part's components can be changed.
 Besides, if you input a wrong number here, there's also a hint.
@@ -73,7 +73,7 @@ By pressing "0 - Back", we returned to the main menu. Now let's press "3 - Decod
 
 **5. Decode **(the algorithm is implemented by Keyi Zhou and me, the figure is implemented by me)****
 
-![](https://imgtu.com/i/jOcGWj)
+![](https://s1.ax1x.com/2022/07/22/jOcGWj.png)
 After we changed the noise intensity, we have known the decoding output is correct. In this decode page, we can clearly compare the original values and decoded values.
 If the circuit failed to decoding, you may notice different square waves (the above indicates the original bits without noise added while the bottom means the bits with noise added after the filter circuit). They are absolutely the same in this situation, the noise have no influence on the signal.
 If the decoded outcome is not correct, this program will even give you some suggestions on how to change the circuit. Let's leave this part to be illustrated in Group Wiki.
